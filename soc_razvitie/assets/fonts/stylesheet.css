@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Boyarsky';
+    src: url('Boyarsky-BoldItalic00.eot');
+    src: local('Boyarsky Normal'), local('Boyarsky-BoldItalic:00'),
+        url('Boyarsky-BoldItalic00.eot?#iefix') format('embedded-opentype'),
+        url('Boyarsky-BoldItalic00.woff2') format('woff2'),
+        url('Boyarsky-BoldItalic00.woff') format('woff'),
+        url('Boyarsky-BoldItalic00.ttf') format('truetype'),
+        url('Boyarsky-BoldItalic00.svg#Boyarsky-BoldItalic:00') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+

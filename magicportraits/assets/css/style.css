@@ -1,0 +1,1385 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('YesevaOne-Regular.eot');
+    src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
+        url('../fonts/YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YesevaOne-Regular.woff2') format('woff2'),
+        url('../fonts/YesevaOne-Regular.woff') format('woff'),
+        url('../fonts/YesevaOne-Regular.ttf') format('truetype'),
+        url('../fonts/YesevaOne-Regular.svg#YesevaOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cambria';
+	src: url('../fonts/Cambria.eot');
+	src: url('../fonts/Cambria.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Cambria.woff') format('woff'),
+	url('../fonts/Cambria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+  padding-top: 0;
+  overflow-x: hidden;
+}
+
+
+/* block-1 */
+
+.block-1 .height-730 {
+	height: 727px;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.block-1 .container {
+    z-index: 2;
+    position: relative;
+}
+
+.block-1 {
+	background: #fff;
+	height: 727px;
+	width: 100%;
+	position: relative;
+}
+.block-1:after {
+	content: "";
+	width: 100%;
+	height: 727px;
+	position: absolute;
+	background: url(../images/slider-bottom.png) bottom -10px center no-repeat;
+	z-index: 2;
+	top: 0;
+}
+.top-slider {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.top-slider .slide-1, 
+.top-slider .slide-2, 
+.top-slider .slide-3 {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	object-fit: cover;
+	opacity: 0;
+	transition: 0.5s;
+	align-items: center;
+    justify-content: center;
+}
+.top-slider .slide-1.active, 
+.top-slider .slide-2.active, 
+.top-slider .slide-3.active {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.block-1 .container {
+	position: relative;
+	z-index: 3;
+}
+
+.logo {
+	background-image: url(../images/logo.png);
+    width: 231px;
+    height: 114px;
+}
+
+.language ul li,
+.social ul li {
+	list-style-type: none;
+	display: inline-block;
+} 
+
+.language .de,
+.language .en,
+.language .ru {
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	color: #16bdbb;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Cambria';
+	padding-top: 4px;
+	padding-left: 6px;
+	margin-right: 13px;
+	margin-top: 30px;
+}
+
+.language .de:hover,
+.language .en:hover,
+.language .ru:hover {
+	background: #ffe019;
+}
+
+.fb {
+	background-image: url(../images/fb.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 13px;
+	margin-top: 30px;
+}
+
+.ig {
+	background-image: url(../images/ig.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 13px;
+	margin-top: 30px;
+}
+
+.fb:hover{
+	background: url(../images/fb-hover.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 13px;
+	margin-top: 30px;
+}
+
+.ig:hover {
+	background: url(../images/ig-hover.png);
+	width: 30px;
+	height: 30px;
+	margin-right: 13px;
+	margin-top: 30px;
+}
+
+.h2 {
+    padding-top: 80px;
+}
+
+.h2 h2 {
+	color: #ffe019;
+	font-family: 'Yeseva One';
+	font-size: 56px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 54px;
+}
+
+.h2 p {
+	font-family: 'Cambria';
+	font-size: 20px;
+	color: #ffffff;
+	padding-top: 20px;
+	line-height: 34px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.portrait-order {
+	margin-top: 70px;
+}
+
+.portrait-order button {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Cambria';
+	width: 290px;
+	height: 75px;
+	border: none;
+	border-radius: 39px;
+	padding: 17px 43px;
+	box-shadow: 0px 5px 35px rgba(255,43,142,0.4);
+	background: #ff238f;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmYyMzhmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmYTE4NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-35deg, #ff238f 0%, #ffa184 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff238f), color-stop(100%,#ffa184));
+	background: -webkit-linear-gradient(-35deg, #ff238f 0%,#ffa184 100%);
+	background: -o-linear-gradient(-35deg, #ff238f 0%,#ffa184 100%);
+	background: -ms-linear-gradient(-35deg, #ff238f 0%,#ffa184 100%);
+	background: linear-gradient(105deg, #ff238f 0%,#ffa184 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff238f', endColorstr='#ffa184',GradientType=1 );
+}
+
+.portrait-order button:hover {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Cambria';
+	width: 290px;
+	height: 75px;
+	border: none;
+	border-radius: 39px;
+	padding: 17px 43px;
+	box-shadow: 0px 8px 35px rgba(255,92,138,0.83);
+	background: #ff50a6;
+		background: -moz-linear-gradient(-35deg, #ff50a6 0%, #ffb284 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff50a6), color-stop(100%,#ffb284));
+	background: -webkit-linear-gradient(-35deg, #ff50a6 0%,#ffb284 100%);
+	background: -o-linear-gradient(-35deg, #ff50a6 0%,#ffb284 100%);
+	background: -ms-linear-gradient(-35deg, #ff50a6 0%,#ffb284 100%);
+	background: linear-gradient(105deg, #ff50a6 0%,#ffb284 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff50a6', endColorstr='#ffb284',GradientType=1 );
+}
+
+.slide-back {
+	background: url(../images/back-slide.png) no-repeat;
+	width: 45px;
+	height: 85px;
+}
+
+.slide-next {
+	background: url(../images/next-slide.png) no-repeat;
+	width: 45px;
+	height: 85px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin-top: 135px;
+    width: 70px;
+	opacity: .6;
+}
+
+/* block-2 */
+
+.block-2 {
+	/* height: 700px; */
+	position: relative;
+	z-index: 5;
+}
+
+.block-2-img {
+    background-image: url(../images/bg-block-2.png);
+    background-repeat: no-repeat;
+    height: 544px;
+    width: 687px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 100px;
+}
+
+.block-2 h2 {
+	color: #00d1d7;
+	font-family: 'Yeseva One';
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 52px;
+	text-align: right;
+	z-index: 2;
+	padding-top: 260px;
+}
+
+
+.block-2 p {
+	font-family: 'Cambria';
+	font-size: 24px;
+	color: #103435;
+	padding-top: 20px;
+	line-height: 30px;
+	text-align: right;
+	z-index: 2;
+}
+
+.balloon {
+	background: url(../images/balloon.png);
+	width: 685px;
+	height: 1265px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 245px;
+	overflow-x: hidden;
+	z-index: 3;
+}
+
+
+/* block-3 */
+
+.block-3 .container-fluid {
+ 	background-color: #ff3e8d;
+}
+
+.block-3-left-blue-element {
+	background: url(../images/block-3-left-blue-element.png) no-repeat;
+	display: block;
+	width: 117px;
+	height: 383px;
+	position: absolute;
+	top: -290px;
+	z-index: 2;
+}
+
+.block-3:before {
+	content: '';
+	display: block;
+	background: url(../images/bg-block-3-before.png) no-repeat;
+	width: 100%;
+	height: 172px;
+	margin-top: 100px;
+	background-position: top center;
+	z-index: 1;
+	position: relative;
+}
+
+.block-3:after {
+	content: '';
+	display: block;
+	background: url(../images/bg-block-3-after.png) no-repeat;
+	width: 100%;
+	height: 152px;
+	background-position: bottom center;
+	z-index: 2;
+	position: relative;
+}
+
+.block-3 h2 {
+	font-size: 56px;
+	font-family: 'Yeseva One';
+	font-weight: bold;
+	color: #ffe019;
+	line-height: 52px;
+}
+
+.img-h {
+	height: 150px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.num-1 {
+	background: url(../images/num-1.png) no-repeat;
+}
+
+.num-2 {
+	background: url(../images/num-2.png) no-repeat;
+}
+
+.num-3 {
+	background: url(../images/num-3.png) no-repeat;
+}
+
+.num-4 {
+	background: url(../images/num-4.png) no-repeat;
+}
+
+.num-1,
+.num-2,
+.num-3,
+.num-4 {
+	display: block;
+	height: 210px;
+	background-position: left bottom;
+	text-align: center;
+}
+
+.num-1 span,
+.num-2 span,
+.num-3 span,
+.num-4 span {
+	display: block;
+	text-align: left;
+	font-family: 'Yeseva One';
+	font-size: 22px;
+	color: #fff;
+}
+
+.block-3 p {
+	font-family: 'Yeseva One';
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+}
+
+
+/* block-4 */
+
+.block-4 {
+	position: relative;
+	/* height: 630px; */
+	padding-bottom: 100px;
+}
+
+.tape {
+	background: url(../images/tape.png) no-repeat;
+	width: 745px;
+	height: 630px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -70px;
+	overflow-x: hidden;
+	z-index: 1;
+}
+
+.video-wrap {
+	padding-top: 160px;
+	position: relative;
+	z-index: 2
+}
+
+
+/* block-5 */
+
+
+.block-5 .container-fluid {
+	background: url(../images/bg-block-5.jpg) top center no-repeat;
+	height: 542px;
+	width: 100%;
+}
+
+
+.block-5:before {
+	content: '';
+	display: block;
+	background: url(../images/bg-block-5-before.png) no-repeat;
+	width: 100%;
+	height: 158px;
+	margin-top: -190px;
+	background-position: top center;
+}
+
+.block-5:after {
+	content: '';
+	display: block;
+	background: url(../images/bg-block-5-after.png) no-repeat;
+	width: 100%;
+	height: 152px;
+	background-position: bottom center;
+	position: relative;
+	z-index: 2
+}
+
+.block-5 h2 {
+	font-size: 56px;
+	font-family: 'Yeseva One';
+	font-weight: bold;
+	color: #ffe019;
+	line-height: 52px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.portrait-1,
+.portrait-2,
+.portrait-3 {
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+.border-1,
+.border-2,
+.border-3 {
+	display: block;
+	border: 10px solid #fff;
+	color: #fff;
+	font-size: 36px;
+	font-family: 'YesevaOne';
+	font-weight: bold;	
+}
+
+.border-1 {
+	width: 220px;
+	height: 220px;
+}
+
+.border-2 {
+	width: 220px;
+	height: 304px;
+}
+
+.border-3 {
+	width: 235px;
+	height: 330px;
+}
+
+.portrait-1 span,
+.portrait-2 span,
+.portrait-3 span {
+	color: #80fafd;
+	font-size: 24px;
+	font-family: 'Cambria';
+}
+
+.size-cm {
+	font-family: 'Cambria';
+	font-size: 18px;
+	color: #fff;
+}
+
+.block-5 .portrait-order {
+	z-index: 3;
+	margin-top: 60px;
+}
+
+
+/* block-6 */
+
+.block-6 h2 {
+	font-family: 'Yeseva One';
+	font-size: 48px;
+	color: #00d1d7;
+	font-weight: bold;
+	margin-top: 120px;
+	z-index: 3;
+	text-align: center;
+}
+
+.set {
+	background: url(../images/set.jpg) no-repeat;
+	background-size: contain;
+	background-size: contain;
+    height: 762px;
+}
+
+.tape-6-left {
+	background: url(../images/tape-6-left.png) no-repeat;
+	width: 276px;
+	height: 1039px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 500px;
+	overflow-x: hidden;
+	z-index: 1;
+}
+
+.tape-6-right {
+	background: url(../images/tape-6-right.png) no-repeat;
+	width: 633px;
+	height: 480px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -80px;
+	overflow-x: hidden;
+	z-index: 1;
+}
+
+.block-6 {
+	position: relative;
+}
+
+.block-6-right-blue-element {
+	background: url(../images/block-6-right-blue-element.png) no-repeat;
+	display: block;
+	width: 75px;
+	height: 251px;
+	position: absolute;
+	right: 0;
+	top: 500px;
+	z-index: 1;
+}
+
+.ig-foto {
+	display: block;
+	position: relative;
+	z-index: 2;
+	background: url(../images/ig-foto.jpg) no-repeat center;
+	height: 808px;
+	width: 100%;
+}
+
+.block-7 {
+	margin-top: -500px;
+}
+
+.block-7 .container-fluid {
+ 	background-color: #ff3e8d;
+ 	position: relative;
+ 	z-index: 1;
+ 	padding-top: 300px;
+}
+
+.block-7:before {
+	content: '';
+	display: block;
+	background: url(../images/bg-block-3-before.png) no-repeat;
+	width: 100%;
+	height: 172px;
+	margin-top: 100px;
+	background-position: top center;
+}
+
+.right-bg-woman {
+	background-image: url(../images/bg-block-7.jpg);
+	background-repeat: no-repeat;
+	width: 686px;
+	height: 543px;
+	z-index: 1;
+	position: absolute;
+	right: 120px;
+	bottom: -30px;
+}
+
+.text-z-index {
+    position: relative;
+    z-index: 3;
+    text-shadow: 0px 0px 1px grey;
+}
+
+.block-7 h3 {
+	color: #fff;
+	font-family: 'Yeseva One';
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.block-7 p {
+	color: #fff;
+	font-family: 'Cambria';
+	font-size: 16px;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+
+.footer {
+	 background-color: #ff3e8d;
+	 color: #fff;
+	 font-family: 'Cambria';
+	 font-size: 16px;
+}
+
+.order-wrap {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+
+/* Modal */
+.order {
+	background: url(../images/order-bg.png) no-repeat;
+	width: 662px;
+	height: 608px;
+	position: absolute;
+}
+
+.close {
+
+    float: right;
+    font-size: 8rem;
+    font-weight: 200;
+	line-height: 70px;
+    color: #fff;
+    text-shadow: none;
+    opacity: 1; 
+}
+
+.modal-header .close {
+    padding: 0rem;
+    margin: -2rem 3rem -1rem auto;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-content {
+	border: none;
+}
+
+form {
+    padding-left: 100px;
+    top: 100px;
+    position: absolute;
+    display: block;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0;
+    outline: none;
+}
+
+.size-input {
+	position: relative;
+	margin-bottom: 30px;
+}
+.size-input-holder {
+	height: 64px;
+	border-radius: 34px;
+	background: #fff;
+	padding: 0 30px;
+	line-height: 64px;
+	font-family: 'Cambria';
+	font-size: 16px;
+	padding-right: 100px;
+}
+
+.size-input-holder span {
+    height: 64px;
+    float: right;
+    margin-right: 70px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.size-input-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 75px;
+	height: 64px;
+	border-radius: 34px;
+	background: url(../images/arrow.png) center center no-repeat #f40988;
+	display: block;
+	cursor: pointer;
+}
+
+.size-input-items {
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	border-radius: 34px 34px;
+	position: absolute;
+	top: 64px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+.size-input-items li {
+	display: block;
+}
+.size-input-items li a {
+	height: 64px;
+	display: block;
+	line-height: 64px;
+	padding: 0 30px;
+	color: #000;
+	font-family: 'Cambria';
+	font-size: 16px;
+}
+.size-input-items li a:hover {
+	text-decoration: none;
+	color: #f40988;
+}
+.size-input-items li a span {
+    height: 64px;
+    float: right;
+    margin-right: 70px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.size-input.opened .size-input-holder {
+	border-radius: 34px 34px 0 0;
+}
+.size-input.opened .size-input-items {
+	border-radius: 0 0 34px 34px;
+	display: block;
+}
+.size-input.opened .size-input-button {
+	transform: rotate(180deg);
+}
+
+
+.name-input, .email-input {
+	height: 64px;
+	line-height: 64px;
+	background: #fff;
+	border-radius: 34px;
+	padding: 0 30px;
+	border: 0;
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+	font-family: 'Cambria';
+	font-size: 16px;
+}
+
+.wrap-size {
+/*	display: block;
+	background: #fff;
+	width: 430px;
+	height: 64px;
+	border-radius: 34px;
+	padding-left: 355px;*/
+	margin-bottom: 30px;
+}
+
+.modal .portrait-order {
+	margin-top: 30px;
+}
+
+.modal .portrait-order button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.file-size {
+	position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 430px; /* Задаем ширину кнопки выбора файла */
+	height: 64px; /* Задаем высоту кнопки выбора файла */
+	background: #f40988;
+	border-radius: 34px;
+/*	padding: 12px 22px;
+	color: #fff;
+	text-align: center;*/
+}
+
+.file-size select[type="file"]{
+display: none; /* Обязательно скрываем настоящий Input File */
+}
+
+/*.file-size label {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}*/
+
+.arrow-bottom:before, 
+.arrow-bottom:after {
+	content: ''; 
+	position: absolute;
+	left: 18px; bottom: 0px;
+	border: 20px solid transparent;
+	border-top: 20px solid #fff;
+	z-index: 2000
+}
+
+.arrow-bottom:after {
+	border-top: 20px solid #f40988;
+	bottom: 5px; 
+}
+
+.modal {
+	background: rgba(0,0,0,0.8);
+}
+
+.wrap-upload {
+	display: block;
+	background: #fff;
+	width: 430px;
+	height: 64px;
+	border-radius: 34px;
+	padding-left: 300px;
+	position: relative;
+}
+
+.filename-holder {
+	height: 64px;
+	background: transparent;
+	line-height: 64px;
+	padding: 0 30px;
+	left: 0;
+	right: 130px;
+	top: 0;
+	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.file-upload {
+	position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 130px; /* Задаем ширину кнопки выбора файла */
+	height: 64px; /* Задаем высоту кнопки выбора файла */
+	background: #f40988;
+	border-radius: 34px;
+	padding: 12px 22px;
+	color: #fff;
+	text-align: center;
+}
+
+.file-upload input[type="file"]{
+display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+/* Растягиваем label на всю возможную площадь блока .file-upload */
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.file-upload span {
+	line-height: 64px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+
+.select-style {
+	display: block;
+	background: #fff;
+	height: 64px;
+	width: 430px;
+	border-radius: 34px;
+	border: none;
+	padding-left: 20px;
+}
+
+.input-style {
+	display: block;
+	height: 64px;
+	width: 430px;
+	border-radius: 34px;
+	border: none;
+	padding-bottom: 
+}
+
+
+
+/*------- new modal*/
+.custom-select {
+    position: absolute;
+    z-index: 10;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.custom-select select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 34px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    color: #000;
+    height: 64px;
+    cursor: pointer;
+}
+.custom-select:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 64px;
+    border-radius: 45px;
+    background: #fff;
+    z-index: -1;
+    right: 70px;
+}
+.custom-select:after {
+    position: absolute;
+    right: 26px;
+    top: 7px;
+    width: 30px;
+    height: 100%;
+    line-height: 38px;
+    content: "∨";
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    z-index: -1;
+}
+
+/* /Modal */
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 1199px) {
+
+	.block-6-right-blue-element {
+		top: 700px;
+	}
+
+	.right-bg-woman {
+	    right: 50px;
+	}
+
+
+}
+
+ @media (max-width: 991px) {
+
+ 	body > div {
+ 		max-width:100vw;
+ 		overflow: hidden;
+ 	}
+
+ 	.balloon {
+	    background: url(../images/balloon.png);
+	    width: 595px;
+	    height: 735px;
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    top: 315px;
+	    overflow-x: hidden;
+	    z-index: 3;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+
+ 	.order {
+		width: 100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#049ad9+0,67cbce+100 */
+		background: #049ad9; /* Old browsers */
+		background: -moz-linear-gradient(top, #049ad9 0%, #67cbce 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #049ad9 0%,#67cbce 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #049ad9 0%,#67cbce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#049ad9', endColorstr='#67cbce',GradientType=0 ); /* IE6-9 */
+ 	}
+ 	.order form {
+		padding-left: 0px;
+		position: absolute;
+		display: block;
+		left: 50%;
+		margin-left: -215px;
+		top: 50px;
+ 	}
+ 	.modal-header .close {
+	    padding: 0rem;
+	    margin: 0;
+	    position: absolute;
+	    top: -10px;
+	    right: 0;
+	    z-index: 2;
+	}
+	.modal-body {
+		margin-top: 20px;
+	}
+	.modal-title {
+	    margin-bottom: 0;
+	    line-height: 1.5;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    text-align: center;
+	    font-family: 'Yeseva One';
+	    font-weight: bold;
+	    color: #ffe019;
+	    font-size: 30px;
+	}
+
+	.logo {
+		background-image: url(../images/logo-md.png);
+	    width: 130px;
+	    height: 65px;
+	}
+
+	.language ul,
+	.social ul {
+		padding: 0;
+	}
+
+	.language .de,
+	.language .en,
+	.language .ru,
+	.social .fb,
+	.social .ig {
+	    margin-right: 10px;
+	    margin-top: 0;
+	}
+
+	.h2 h2 {
+	    font-size: 38px;
+	    letter-spacing: 1px;
+	    line-height: 36px;
+	}
+
+	
+	.h2 p {
+	    font-size: 18px;
+	    line-height: 24px;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	.portrait-order {
+	    margin-top: 140px;
+	}
+
+	.block-2 {
+	    /* height: 520px; */
+	}
+
+	.balloon {
+	    right: -40%;
+	}
+
+	.block-2-img {
+	    background-image: url(../images/bg-block-2-md.png);
+	    background-repeat: no-repeat;
+	    height: 354px;
+	    width: 450px;
+	    margin-top: 40px;
+	    position: relative;
+		background-position-x: center;
+	}
+
+
+	.block-2 h2 {
+		font-size: 38px;
+		line-height: 36px;
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.block-2 p {
+	    font-size: 18px;
+	    padding-top: 10px;
+	    line-height: 24px;
+	    text-align: center;
+	}
+
+	.block-3-left-blue-element {
+		display: none;
+	}
+
+	.block-3 h2 {
+	    font-size: 38px;
+	}
+
+	.num-1 span,
+	.num-2 span,
+	.num-3 span,
+	.num-4 span {
+	    text-align: center;
+	}
+
+	.num-1 {
+	    background-position-x: 260px;
+	}
+
+	.num-2 {
+	    background-position-x: 245px;
+	}
+
+	.num-3 {
+	    background-position-x: 240px;
+	}	
+
+	.num-4 {
+	    background-position-x: 235px;
+	}
+
+	.block-3 p {
+	    text-align: center;
+	    padding-bottom: 20px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+
+	.block-4 {
+		/*
+	    height: 500px;
+	    */
+	}
+
+	.video-wrap {
+	    padding-top: 30px;
+	}
+
+	.tape {
+	    background: none;
+	    display: none;
+	}
+
+	.block-5 h2 {
+	    font-size: 38px;
+	    margin-top: -40px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+
+
+	.portrait-1 span,
+	.portrait-2 span,
+	.portrait-3 span {
+	    font-size: 18px;
+	}
+
+
+	.border-1 {
+	    width: 210px;
+	    height: 210px;
+	}
+
+	.border-2 {
+	    width: 210px;
+	    height: 270px;
+	}
+
+	.border-3 {
+	    width: 242px;
+	    height: 324px;
+	}
+
+	.block-5:before {
+	    background: url(../images/bg-block-5-before-md.png) no-repeat;
+	    width: 100%;
+	    height: 210px;
+	    margin-top: -260px;
+	    background-position: top center;
+	}
+
+	.block-5 .container-fluid {
+	    background: url(../images/bg-block-5-md.jpg) top center no-repeat;
+	    height: 725px;
+	    width: 100%;
+	}
+
+	.block-5::after {
+	    background: url(../images/bg-block-5-after-md.png) no-repeat;
+	    width: 100%;
+	    height: 196px;
+	   	background-position: bottom center;
+	}
+
+	.block-6 h2 {
+	    font-size: 38px;
+	    margin-top: 40px;
+	}
+
+	.block-6-right-blue-element {
+		display: none;
+	}
+
+	.tape-6-right {
+		display: none;
+	}
+
+	.tape-6-left {
+		display: none;
+	}
+
+	.set {
+	    height: 500px;
+	}
+
+	.right-bg-woman {
+	    width: 100%;
+	    height: 543px;
+	    z-index: 1;
+	    position: inherit;
+	    right: 0;
+	    left: 0;
+	    bottom: 130px;
+	    background-position-x: center;
+	}
+
+	.block-7 h3 {
+	    padding-top: 30px;
+	}
+
+
+
+
+}
+
+ @media (max-width: 767px) {
+
+	.balloon {
+		right: -50%;
+	} 
+
+	.portrait-order {
+	    margin-top: 110px;
+	}
+
+	.num-1 {
+	    background-position-x: 135px;
+	}
+
+	.num-2 {
+	    background-position-x: 140px;
+	}
+
+	.num-3 {
+	    background-position-x: 130px;
+	}
+
+	.num-4 {
+	    background-position-x: 130px;
+	}
+
+	.portrait-1 {
+    	margin-right: 10px;
+	}
+
+	.portrait-2 {
+	    margin-left: 10px;
+	}
+
+	.portrait-3 {
+	    margin-left: 20px;
+	}
+
+	.set {
+	    height: 350px;
+	}
+
+	.block-7 {
+	    margin-top: -250px;
+	}
+
+	.block-7 .container-fluid {
+		padding-top: 0;
+	}
+
+
+	.right-bg-woman {
+		background-image: url(../images/bg-block-7-md.jpg);
+	    width: 100%;
+	    height: 358px;
+	    right: 0;
+	    left: 0;
+	    top: 260px;
+	}
+
+
+ }
+
+ @media (max-width: 575px) {
+
+	.balloon {
+		right: -70%;
+	} 
+
+	.portrait-order {
+	    margin-top: 80px;
+	}
+
+	.ig-foto {
+	    background: url(../images/ig-foto-md.jpg) no-repeat center;
+	    height: 640px;
+	    width: 100%;
+	}
+
+
+
+ }
+
+
+
+ @media (min-width: 576px) {
+
+	.modal-dialog {
+    	max-width: 662px;
+	}
+
+ }

@@ -1,0 +1,250 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('../fonts/ProximaNova/ProximaNova-Regular'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
+	src: local('Proxima Nova Semibold'), local('../fonts/ProximaNova/ProximaNova-Semibold'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Proxima Nova', sans-serif;
+	color: #fff ;
+
+}
+
+/* BLOCK 1 */
+
+.block-1 {
+	background-image: url('../images/bg-top.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 910px;
+}
+.block-1 h1 {
+	font-weight: bold;
+	font-size: 68px;
+	color: #e21e24;
+}
+.block-1 p {
+	font-size: 26px;
+	line-height: 1.15;
+	text-shadow: 0 0 0 black, 0 0 1px black;
+}
+
+.logo-wraper {
+	background-color: #fff;
+	height: 96px;
+	width: 178px;
+	float: left;
+}
+
+.nav {
+	flex: 0 0 90%;
+}
+.nav li a {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.nav li {
+    align-self: center;
+}
+
+.tel-num {
+	width: 210px;	
+	height: 37px;
+	background-color: #e21e24;
+	color: #000;
+	font-size: 21px;
+	line-height: 37px;
+	text-align: center;
+}
+
+
+/* BLOCK 2 */
+
+.block-2 {
+	background-color: #fff;
+}
+
+.block-2 h2 {
+	color: #232221;
+	font-size: 36px;
+}
+
+.text-red {
+	color: #e21e24;
+	font-size: 21px;
+}
+
+.text-table {
+	font-size: 21px;
+	color: #393939;
+}
+
+
+/* BLOCK 3 */
+
+.block-3 {
+	background-image: url('../images/bg-grey.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #2c2b29;
+	padding-top: 110px;
+	padding-bottom: 50px;
+}
+
+.block-3 h2{
+	color: #fff;
+}
+
+.block-3 p {
+	font-size: 27px;
+	line-height: 1.15;
+}
+
+
+/* BLOCK 4 */
+
+.block-4 {
+	background-image: url('../images/bg-bottom.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-height: 795px;
+}
+
+.block-4 h2 {
+	font-size: 36px;
+}
+
+.block-4 button {
+	font-size: 21px;
+	color: #232221;
+}
+
+.block-4 .form-control {
+	font-size: 21px;
+}
+
+.bg-opacity-09 {
+	background-color: rgba(255, 255, 255, 0.09);
+	font-size: 27px;
+	text-align: center;
+	margin-bottom: 34px;
+}
+.bg-opacity-09 + .bg-opacity-09 p {
+	letter-spacing: -0.05em;
+}
+
+
+
+/* FOOTER */
+
+.logo-wraper-footer {
+	height: 96px;
+	width: 178px;
+	float: left;
+}
+
+.footer .nav li a {
+	color: #000;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+/* MAP */
+
+.modal-body h2 {
+	color: #212121;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.modal-body p {
+	color: #212121;
+	font-size: 21px;
+}
+
+.exit {
+    color: #f00;
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    font-size: 3rem;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.modal .close.exit:hover {
+    color: #f00;
+}
+
+.modal-lg {
+	max-width: 80%;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1310px;
+	}
+}
+@media (max-width: 991.98px) { 
+	.bg-opacity-09 {
+	    background-color: rgba(255, 255, 255, 0.39);
+	    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+	}
+
+	.nav li a {
+		display: block;
+		flex: 0 0 100%;
+		text-align: right;
+	}
+
+	.nav li {
+	    display: block;
+		flex: 0 0 100%;
+		text-align: right;
+	}
+
+}
+
+@media (max-width: 767.98px) {
+	.block-1 h1 {
+	font-size: 48px;
+	text-align: center;
+	}
+}

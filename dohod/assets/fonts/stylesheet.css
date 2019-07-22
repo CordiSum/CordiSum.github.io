@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Chiller';
+    src: url('subset-Chiller-Regular.eot');
+    src: url('subset-Chiller-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Chiller-Regular.woff2') format('woff2'),
+        url('subset-Chiller-Regular.woff') format('woff'),
+        url('subset-Chiller-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

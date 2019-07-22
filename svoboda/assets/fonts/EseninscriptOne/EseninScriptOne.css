@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'EseninscriptOne';
+    src: url('EseninscriptOne.eot');
+    src: local('Esenin script One'), local('EseninscriptOne'),
+        url('EseninscriptOne.eot?#iefix') format('embedded-opentype'),
+        url('EseninscriptOne.woff') format('woff'),
+        url('EseninscriptOne.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
